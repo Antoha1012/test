@@ -12,11 +12,11 @@ mixin header(props = {})
 					img(src="./assets/img/hkhk.svg", alt="")
 					p.header__top_icon-text Надежное подключение к Internet
 				.header__top_phone
-					img(src="./assets/img/Shape.svg", alt="")
+					img.header__top_phone-img(src="./assets/img/Shape.svg", alt="")
 					a(href="tel:+380965060609").header__top_phone-text +380965060609; 
 					a(href="tel:+380995060609").header__top_phone-text +380995060609;
-					a(href="tel:+380735060609").header__top_phone-text +380735060609
-				a.header__top_link(href="/") Обратный звонок
+					a(href="tel:+380735060609").header__top_phone-text +380735060609;
+				a#myBtn.header__top_link(href="/") Обратный звонок
 			.header__nav
 				ul.header__nav_list
 					li.header__nav_item
@@ -40,3 +40,29 @@ mixin header(props = {})
 				.header__content_btn
 					a.header__content_btn-order(href="/") Заказать
 					a.header__content_btn-consultation(href="/") Получить консультацию
+			.header__footer
+				.header__footer_block
+					img.header__footer_block-img(src="./assets/img/24-hours.svg", alt="")
+					p.header__footer_block-text Отзывчивая техническая поддержка
+				.header__footer_block
+					img.header__footer_block-img(src="./assets/img/servers.svg", alt="")
+					p.header__footer_block-text Квалифицированные инженеры
+				.header__footer_block
+					img.header__footer_block-img(src="./assets/img/website.svg", alt="")
+					p.header__footer_block-text Современные технологии
+				.header__footer_block
+					img.header__footer_block-img(src="./assets/img/guarantee.svg", alt="")
+					p.header__footer_block-text 
+						| Опыт работы 
+						br
+						| с 2003 года
+			#myModal.modal
+				.modal-content
+					.modal-header
+						span.close ×
+						h2 Шапка модального окна
+					.modal-body
+						p Какой-то текст в теле модального окна
+						p Ещё другой текст...
+					.modal-footer
+						h3 Футер модального окна

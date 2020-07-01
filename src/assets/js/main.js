@@ -9,9 +9,10 @@ import svg4everybody from 'svg4everybody';
 import * as FocusUtility from './util/focus';
 import * as LazyLoader from './util/lazy-loader';
 
+
 // Block imports
 // TODO: add code here
-
+import * as header from '../../blocks/header/index.js';
 // Initialize libraries
 svg4everybody();
 
@@ -19,5 +20,7 @@ svg4everybody();
 FocusUtility.init();
 LazyLoader.init();
 
+
 // Initialize blocks
 // TODO: add code here
+header.initBlock();
