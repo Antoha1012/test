@@ -1,0 +1,26 @@
+//-
+	name: header-footer
+	description: Markup for the header footer block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin header-footer(props = {})
+	.header-footer
+		.header-footer_wrapper
+			.container
+				.header-footer_blocks
+					.header-footer_block
+							img.header-footer_block-img(src="./assets/img/24-hours.svg", alt="")
+							p.header-footer_block-text Отзывчивая техническая поддержка
+					.header-footer_block
+							img.header-footer_block-img(src="./assets/img/servers.svg", alt="")
+							p.header-footer_block-text Квалифицированные инженеры
+					.header-footer_block
+							img.header-footer_block-img(src="./assets/img/website.svg", alt="")
+							p.header-footer_block-text Современные технологии
+					.header-footer_block
+							img.header-footer_block-img(src="./assets/img/guarantee.svg", alt="")
+							p.header-footer_block-text 
+								| Опыт работы 
+								br
+								| с 2003 года

@@ -1,0 +1,40 @@
+/**
+ * Styles for the header footer block.
+ */
+.header-footer {
+	&_wrapper {
+		background-color: #303B6C;
+		position: relative;
+		height: 1000px;
+		top: -500px;
+		z-index: 1;
+	}
+
+	&_blocks {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 19px;
+		margin-top: 40px;
+	}
+
+	@media(max-width: 768px) {
+		flex-direction: column;
+	}
+
+	&_block {
+		display: flex;
+		align-items: center;
+
+		&-text {
+			font-family: 'Cera Pro';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 20px;
+			max-width: 163px;
+			color: #FFFFFF;
+		}
+	}
+
+}

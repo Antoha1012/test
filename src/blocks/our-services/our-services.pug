@@ -1,0 +1,58 @@
+//-
+	name: our-services
+	description: Markup for the our services block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin our-services(props = {})
+	.our-services
+		.container
+			h1.our-services__title Наши услуги
+			.our-services__blocks
+				.our-services__block
+					.our-services__block-icon
+						img(src="./assets/img/graphene.svg", alt="")
+					h3.our-services__block-title 
+						| Подключение к Interet по технологии
+						br
+						| GPON/EPON
+					p.our-services__block-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				.our-services__block
+					.our-services__block-icon
+						img(src="./assets/img/smart-tv2.svg", alt="")
+					h3.our-services__block-title
+						| Телевидение по
+						br
+						| технологии «OTT»
+					p.our-services__block-text.our-services__block-text--mt Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				.our-services__block
+					.our-services__block-icon
+						img(src="./assets/img/support.svg", alt="")
+					h3.our-services__block-title
+						| Монтаж кабельной
+						br
+						| системы в квартирах
+						br
+						| и частных домах
+					p.our-services__block-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				.our-services__block.our-services__block--mt
+					.our-services__block-icon
+						img(src="./assets/img/customer-service.svg", alt="")
+					h3.our-services__block-title Консультации по выбору оборудования для доступа в Internet
+					p.our-services__block-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				.our-services__block.our-services__block--mt
+					.our-services__block-icon
+						img(src="./assets/img/ip.svg", alt="")
+					h3.our-services__block-title 
+						| Публичный
+						br
+						| IPv4-адрес
+					p.our-services__block-text.our-services__block-text--mt  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				.our-services__block.our-services__block--mt
+					.our-services__block-icon
+						img(src="./assets/img/ip1.svg", alt="")
+					h3.our-services__block-title 
+						| Публичный
+						br
+						| IPv6-адрес
+					p.our-services__block-text.our-services__block-text--mt  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.

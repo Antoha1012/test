@@ -1,0 +1,14 @@
+// Partial imports
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "base";
+@import './node_modules/bootstrap/scss/bootstrap-grid';
+// Third-party imports
+// TODO: add code here
+
+// Block imports
+@import "../../blocks/common/page/page";
+@import "../../blocks/header/header";
+@import "../../blocks/header-footer/header-footer";
+@import "../../blocks/our-services/our-services";

@@ -1,0 +1,42 @@
+//-
+	name: header
+	description: Markup for the header block.
+	arguments:
+		- {object} props - Block properties.
+
+mixin header(props = {})
+	.header
+		.container
+			.header__top
+				.header__top_icon
+					img(src="./assets/img/hkhk.svg", alt="")
+					p.header__top_icon-text Надежное подключение к Internet
+				.header__top_phone
+					img(src="./assets/img/Shape.svg", alt="")
+					a(href="tel:+380965060609").header__top_phone-text +380965060609; 
+					a(href="tel:+380995060609").header__top_phone-text +380995060609;
+					a(href="tel:+380735060609").header__top_phone-text +380735060609
+				a.header__top_link(href="/") Обратный звонок
+			.header__nav
+				ul.header__nav_list
+					li.header__nav_item
+						a.header__nav_item-link(href="/") Абонентам
+					li.header__nav_item
+						a.header__nav_item-link(href="/") Карта покрытия
+					li.header__nav_item
+						a.header__nav_item-link(href="/") Тарифы
+					li.header__nav_item
+						a.header__nav_item-link(href="/") Телевидение
+					li.header__nav_item
+						a.header__nav_item-link(href="/") Способы оплаты
+					li.header__nav_item
+						a.header__nav_item-link(href="/") О нас
+				.header__nav_btn
+					img.header__nav_btn-img(src="./assets/img/Path.svg", alt="")
+					a.header__nav_btn-link(href="/") Личный кабинет
+			.header__content
+				h1.header__content_title Подключение по технологии GPON
+				p.header__content_subtitle Суперскоростной интеренет и 3 месяца в подарок!
+				.header__content_btn
+					a.header__content_btn-order(href="/") Заказать
+					a.header__content_btn-consultation(href="/") Получить консультацию
