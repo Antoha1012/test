@@ -141,3 +141,19 @@
     font-weight: 100;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Futura-Normal";
+    src: url("//db.onlinewebfonts.com/t/e15e04d5b8ea210a0a98596732a32871.eot");
+    src: url("//db.onlinewebfonts.com/t/e15e04d5b8ea210a0a98596732a32871.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e15e04d5b8ea210a0a98596732a32871.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e15e04d5b8ea210a0a98596732a32871.woff") format("woff"), url("//db.onlinewebfonts.com/t/e15e04d5b8ea210a0a98596732a32871.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e15e04d5b8ea210a0a98596732a32871.svg#Futura-Normal") format("svg");
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local('MuseoSansCyrl'),
+        local('MuseoSansCyrl-300'),
+        url('../fonts/MuseoSansCyrl-300.ttf') format('truetype'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}

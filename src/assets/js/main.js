@@ -12,7 +12,6 @@ import * as LazyLoader from './util/lazy-loader';
 
 // Block imports
 // TODO: add code here
-import * as header from '../../blocks/header/index.js';
 // Initialize libraries
 svg4everybody();
 
@@ -23,4 +22,31 @@ LazyLoader.init();
 
 // Initialize blocks
 // TODO: add code here
-header.initBlock();
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("modal-content__close")[0];
+btn.onclick = function () {
+    modal.style.display = "block";
+    document.getElementById("bg").style.display = "block";
+}
+span.onclick = function () {
+    modal.style.display = "none";
+    document.getElementById("bg").style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        document.getElementById("bg").style.display = "none";
+    }
+}
+
+
+document.getElementById("trigger").onclick = function () {
+    open()
+};
+
+function open() {
+    document.getElementById("menu").classList.toggle("show");
+    document.getElementById('trigger').classList.toggle('close');
+
+}

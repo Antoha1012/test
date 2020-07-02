@@ -16,9 +16,13 @@ mixin header(props = {})
 					a(href="tel:+380965060609").header__top_phone-text +380965060609; 
 					a(href="tel:+380995060609").header__top_phone-text +380995060609;
 					a(href="tel:+380735060609").header__top_phone-text +380735060609;
-				a#myBtn.header__top_link(href="/") Обратный звонок
-			.header__nav
-				ul.header__nav_list
+				button#myBtn.header__top_link Обратный звонок
+			.header__nav.nav
+				span#trigger.trigger
+					i
+					i
+					i
+				ul#menu.menu.header__nav_list
 					li.header__nav_item
 						a.header__nav_item-link(href="/") Абонентам
 					li.header__nav_item
@@ -56,13 +60,18 @@ mixin header(props = {})
 						| Опыт работы 
 						br
 						| с 2003 года
+			#bg
 			#myModal.modal
 				.modal-content
-					.modal-header
-						span.close ×
-						h2 Шапка модального окна
-					.modal-body
-						p Какой-то текст в теле модального окна
-						p Ещё другой текст...
-					.modal-footer
-						h3 Футер модального окна
+					span.modal-content__close ×
+					h1.modal-content__title
+						| Оставьте заявку
+						br
+						| на консультацию и мы свяжемся
+						br
+						| с вами в ближайшее время
+					form.modal-content__form(action="")
+						input.modal-content__input(type="text", name="text", placeholder="Ваше имя")
+						input.modal-content__input(type="phone",name="phone", placeholder="Телефон")
+						input.modal-content__input(type="mail",name="mail", placeholder="E-mail")
+						input.modal-content__btn(type="submit",name="submit", value="Отправить заявку") 
